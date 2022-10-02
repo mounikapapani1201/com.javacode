@@ -53,6 +53,7 @@ public class BaseTest {
 			break;
 		default:
 			System.out.println("please check the browser");
+		}
 
 			driver.manage().timeouts()
 					.implicitlyWait(Duration.ofSeconds(Integer.parseInt(BaseUtils.getConfigValue("implicitWait"))));
@@ -63,7 +64,7 @@ public class BaseTest {
 
 		}
 
-	}
+	
 
 	@AfterMethod
 	public void end() {
